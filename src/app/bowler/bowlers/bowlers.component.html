@@ -1,0 +1,21 @@
+<h2>Bowlers</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Team</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let bowler of bowlers">
+        <td>{{bowler._id}}</td>
+        <td>{{bowler.name}}</td>
+        <td>{{bowler.bowlerTeam}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
