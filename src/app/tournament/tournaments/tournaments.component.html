@@ -1,0 +1,23 @@
+<h2>Tournaments</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <!-- <th>Id</th> -->
+        <th>Team Name</th>
+        <th>Tournament Name</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let tournament of tournaments">
+        <!-- <td>{{tournament._id}}</td> -->
+        <td>{{tournament.bowlerTeam}}</td>
+        <td>{{tournament.tournamentName}}</td>
+        <td>{{tournament.score}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
