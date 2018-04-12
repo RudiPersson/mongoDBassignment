@@ -14,6 +14,8 @@ import { BowlersComponent } from './bowler/bowlers/bowlers.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TournamentsComponent } from './tournament/tournaments/tournaments.component';
 import { LvsComponent } from './lvs-data/lvs/lvs.component';
+import { Pm10Component } from './lvs-data/pm10/pm10.component';
+import { ChartComponent } from './lvs-data/chart/chart.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { LvsComponent } from './lvs-data/lvs/lvs.component';
     ContentComponent,
     BowlersComponent,
     TournamentsComponent,
-    LvsComponent
+    LvsComponent,
+    Pm10Component,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+<h2>LVS PM10</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <!-- <th>Id</th> -->
+        <th>MaalestedId</th>
+        <th>Maalested</th>
+        <th>DatoMaerke</th>
+        <th>StofId</th>
+        <th>StofNavn</th>
+        <th>EnhedId</th>
+        <th>Enhed</th>
+        <th>Resultat</th>
+        <th>UdstyrId</th>
+        <th>Navn</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let lvs of lvsData">
+        <td>{{lvs.MaalestedId}}</td>
+        <td>{{lvs.Maalested}}</td>
+        <td>{{lvs.DatoMaerke}}</td>
+        <td>{{lvs.StofId}}</td>
+        <td>{{lvs.StofNavn}}</td>
+        <td>{{lvs.EnhedId}}</td>
+        <td>{{lvs.Enhed}}</td>
+        <td>{{lvs.Resultat}}</td>
+        <td>{{lvs.UdstyrId}}</td>
+        <td>{{lvs.Navn}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

@@ -28,6 +28,18 @@ export class DataService {
     .map(res => <LvsData[]>res['data']);
   }
 
+  getLvsdataPm10() {
+    return this._http.get('https://apple-tart-39486.herokuapp.com/api/lvs/pm10')
+    .map(res => <LvsData[]>res['data']);
+  }
+
+  getLvsdataPm25() {
+    return this._http.get('https://apple-tart-39486.herokuapp.com/api/lvs/pm25')
+    .map(res => <LvsData[]>res['data']);
+  }
+
+
+
   // getBowlers() {
   //   return this._http.get('http://localhost:3000/api/bowlers')
   //   .map(res => <Bowler[]>res['data']);
